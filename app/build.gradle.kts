@@ -76,4 +76,7 @@ dependencies {
 
     // Coil para Compose
     implementation("io.coil-kt:coil-compose:2.4.0")
+
+    // AppCompact
+    implementation("androidx.appcompat:appcompat:1.7.0")
 }
