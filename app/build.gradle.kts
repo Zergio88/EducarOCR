@@ -46,6 +46,12 @@ dependencies {
 
     // Lifecycle
     implementation(libs.androidx.lifecycle.runtime.ktx)
+    implementation("androidx.lifecycle:lifecycle-viewmodel-compose:2.7.0")
+    implementation("androidx.lifecycle:lifecycle-runtime-compose:2.7.0")
+
+    // Coroutines
+    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.7.3")
+    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-play-services:1.7.3")
 
     // Activity Compose
     implementation(libs.androidx.activity.compose)
@@ -72,10 +78,13 @@ dependencies {
     implementation(libs.canhub.cropper)
 
     // ML Kit Text Recognition (on-device)
-    implementation("com.google.mlkit:text-recognition:16.0.0")
+    implementation("com.google.mlkit:text-recognition:16.0.1")
 
     // Coil para Compose
     implementation("io.coil-kt:coil-compose:2.4.0")
+
+    // SplashScreen API
+    implementation("androidx.core:core-splashscreen:1.0.1")
 
     // AppCompact
     implementation("androidx.appcompat:appcompat:1.7.0")
