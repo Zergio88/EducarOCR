@@ -40,20 +40,52 @@ android {
 }
 
 dependencies {
-
+    // Core AndroidX
     implementation(libs.androidx.core.ktx)
+    implementation(libs.appcompat)
+
+    // Lifecycle
     implementation(libs.androidx.lifecycle.runtime.ktx)
+    implementation("androidx.lifecycle:lifecycle-viewmodel-compose:2.7.0")
+    implementation("androidx.lifecycle:lifecycle-runtime-compose:2.7.0")
+
+    // Coroutines
+    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.7.3")
+    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-play-services:1.7.3")
+
+    // Activity Compose
     implementation(libs.androidx.activity.compose)
+
+    // Compose
     implementation(platform(libs.androidx.compose.bom))
     implementation(libs.androidx.compose.ui)
     implementation(libs.androidx.compose.ui.graphics)
     implementation(libs.androidx.compose.ui.tooling.preview)
     implementation(libs.androidx.compose.material3)
+
+    // Testing
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
     androidTestImplementation(platform(libs.androidx.compose.bom))
     androidTestImplementation(libs.androidx.compose.ui.test.junit4)
+
+    // Debug
     debugImplementation(libs.androidx.compose.ui.tooling)
     debugImplementation(libs.androidx.compose.ui.test.manifest)
+
+    // CanHub
+    implementation(libs.canhub.cropper)
+
+    // ML Kit Text Recognition (on-device)
+    implementation("com.google.mlkit:text-recognition:16.0.1")
+
+    // Coil para Compose
+    implementation("io.coil-kt:coil-compose:2.4.0")
+
+    // SplashScreen API
+    implementation("androidx.core:core-splashscreen:1.0.1")
+
+    // AppCompact
+    implementation("androidx.appcompat:appcompat:1.7.0")
 }
